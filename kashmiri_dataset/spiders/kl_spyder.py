@@ -5,6 +5,24 @@ from kashmiri_dataset.items import KLItem
 
 
 class KL_Spider(scrapy.Spider):
+    '''
+    www.kashmirilanguage.com
+    
+    usage :
+    
+      1. To fetch Kashmiri Text from the website
+        scrapy crawl kashmir_language_spyder -o csv_files/file_name.csv
+      
+      2. To fetch all the files from the website 
+        scrapy crawl kashmir_language_spyder  -a download_files=True
+    
+      3. To fetch files of a certain extension e.g *.pdf
+        scrapy crawl kashmir_language_spyder  -a download_files=True -a file_extension=".pdf"
+    
+    Note : files can be found in downloaded_content/
+    
+    '''
+    
     name = 'kashmir_language_spyder'
 
 

@@ -5,6 +5,15 @@ from kashmiri_dataset.items import SHItem
 
 
 class SH_Spider(scrapy.Spider):
+    '''
+    Sheeba Hassan
+    A pronouncing dictionary of the kashmiri language
+    
+    usage :
+        scrapy crawl sh_dict_spyder -o csv_files/file_name.csv
+    
+    # Note : Can find the the pronouncation of words in downloaded_content/uchicago_S_Hassan/
+    '''
     name = 'sh_dict_spyder'
 
     alpha_index = 0

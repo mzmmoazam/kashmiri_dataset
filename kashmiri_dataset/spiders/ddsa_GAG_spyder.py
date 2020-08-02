@@ -4,8 +4,15 @@ from kashmiri_dataset.items import GAGItem
 
 
 class GAG_Spider(scrapy.Spider):
-    # George A. Grierson
-    # Digital Dictionaries of South Asia
+    '''
+    George A. Grierson
+    Digital Dictionaries of South Asia
+    
+    usage :
+        scrapy crawl gag_dict_spyder -o csv_files/file_name.csv
+    
+    '''
+
 
     name = 'gag_dict_spyder'
 

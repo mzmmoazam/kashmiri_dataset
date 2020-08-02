@@ -5,6 +5,13 @@ from kashmiri_dataset.items import KZItem
 
 
 class KZ_Spider(scrapy.Spider):
+    '''
+    http://kashmirizabaan.com
+    
+    usage :
+        scrapy crawl kashmiri_zabaan_spyder -o csv_files/file_name.csv
+    
+    '''
     name = 'kashmiri_zabaan_spyder'
 
     start_urls = {
